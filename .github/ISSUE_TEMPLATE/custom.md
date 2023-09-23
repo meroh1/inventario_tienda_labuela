@@ -1,3 +1,13 @@
+---
+name: custom
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+
 ## Descripción
 [Describe el problema o la tarea de manera clara y concisa.]
 
