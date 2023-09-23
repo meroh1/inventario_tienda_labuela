@@ -1,5 +1,5 @@
 ---
-name: Bug jp
+name: Bug jp pr
 about: Create a report to help us improve
 title: ''
 labels: ''
