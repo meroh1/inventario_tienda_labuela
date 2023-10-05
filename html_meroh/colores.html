@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo y Mostrar Nombre
+    hola mundo
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #appbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        #container {
+            margin: 100px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 2px solid #333;
+            background-color: #fff;
+            color: #333;
+            margin: 5px;
+        }
+
+        /* Define colores personalizados */
+        .color-rojo {
+            background-color: red;
+        }
+
+        .color-verde {
+            background-color: green;
+        }
+
+        .color-azul {
+            background-color: blue;
+        }
+
+        .color-amarillo {
+            background-color: yellow;
+        }
+
+        .color-rosa {
+            background-color: pink;
+        }
+
+        .color-morado {
+            background-color: purple;
+        }
+
+        .color-naranja {
+            background-color: orange;
+        }
+
+        .color-negro {
+            background-color: black;
+            color: white;
+        }
+
+        .color-blanco {
+            background-color: white;
+        }
+
+        .color-gris {
+            background-color: gray;
+        }
+
+        .color-cyan {
+            background-color: cyan;
+        }
+
+        .color-magenta {
+            background-color: magenta;
+        }
+
+        .color-celeste {
+            background-color: rgb(0, 183, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="appbar">
+        <h1>Los Colores y Tu Nombre completo</h1>
+    </div>
+    <div id="container">
+        <h2>Selecciona un color:</h2>
+        <button class="color-naranja">Naranja</button>
+        <button class="color-morado">Morado</button>
+        <button class="color-verde">Verde</button>
+        <button class="color-blanco">Blanco</button>
+        <!-- Resto de los botones de colores... -->
+
+        <h2>Nombre completo:</h2>
+        <input type="text" id="nombreInput" placeholder="Tu nombre">
+        <button id="guardarNombre">Guardar Tu Nombre Completo</button>
+
+        <h2>Tu Nombre:</h2>
+        <h2 id="Nombre que se muestra"></h2>
+    </div>
+
+    <script>
+        // Funciones para cambiar el color de fondo
+        const buttons = document.querySelectorAll("button.color-rojo, button.color-verde, button.color-azul, button.color-amarillo, button.color-rosa, button.color-morado, button.color-naranja, button.color-negro, button.color-blanco, button.color-gris, button.color-cyan, button.color-magenta, button.color-lima");
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                document.body.className = this.className;
+            });
+        });
+
+        // Función para guardar el nombre y mostrarlo
+        const nombreInput = document.getElementById("nombreInput");
+        const nombreMostrado = document.getElementById("nombreMostrado");
+        const guardarNombreBtn = document.getElementById("guardarNombre");
+
+        guardarNombreBtn.addEventListener("click", function() {
+            const nombre = nombreInput.value;
+            nombreMostrado.textContent = `Tu Nombre: ${nombre}`;
+            // Guardar el nombre en el almacenamiento local (localStorage)
+            localStorage.setItem("nombreUsuario", nombre);
+        });
+
+        // Comprobar si hay un nombre guardado en el almacenamiento local al cargar la página
+        const nombreGuardado = localStorage.getItem("nombreUsuario");
+        if (nombreGuardado) {
+            nombreMostrado.textContent = `Tu Nombre: ${nombreGuardado}`;
+        }
+    </script>
+</body>
+</html>
