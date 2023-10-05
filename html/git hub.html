@@ -81,22 +81,34 @@
     </section>
     
     <section id="pull-request">
-        <h2>Creación de Pull Request</h2>
+        <h2>Creación de Pull Request desde Otra Rama</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ipsum nec lorem feugiat varius. Nullam auctor, ex quis aliquet.
+            Una Pull Request (Solicitud de Extracción) te permite proponer cambios en un repositorio y solicitar que se fusionen en la rama principal. Sigue estos pasos para crear un Pull Request desde otra rama:
         </p>
         <div class="code-box">
             <pre>
                 <code>
-                    git pull origin main
-                    git checkout -b feature/nueva-caracteristica
-                    git add .
-                    git commit -m "Agregar nueva característica"
-                    git push origin feature/nueva-caracteristica
+                    # Clona el repositorio
+                    git clone link_del_repositorio
+    
+                    # Ingresa a la carpeta clonada
+                    cd nombre_de_la_carpeta_clonada
+    
+                    # Realiza cambios en tu rama
+                    # (ejemplo: corrige un error y realiza un commit)
+                    git commit -m "Corrección: Actualización de la rama"
+    
+                    # Envía los cambios desde tu rama a la rama principal del repositorio remoto
+                    git push origin tu_rama:main -f
+    
+                    # En GitHub, crea un nuevo Pull Request
+                    # y escribe "Close #NúmeroDeIssue" en el cuerpo del Pull Request
+                    # para vincularlo automáticamente a una issue y cerrarla al fusionar
                 </code>
             </pre>
         </div>
     </section>
+    
     <section id="clonar-repositorio">
         <h2>Clonar un Repositorio</h2>
         <p>
