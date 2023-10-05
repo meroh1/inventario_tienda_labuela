@@ -49,6 +49,7 @@
         <a href="#pull-request">Creación de Pull Request</a>
         <a href="#clonar-repositorio">Clonar un Repositorio</a>
         <a href="#añadir-cambios">Añadir Cambios y Hacer Commit</a>
+        <a href="#eliminar-commits">Eliminacion de commits</a>
     </nav>
     <section id="pull-request">
         <h2>Creación de Pull Request</h2>
@@ -95,5 +96,41 @@
             </pre>
         </div>
     </section>
+    <section id="eliminar-commits">
+        <h2>Eliminacion De Commits Desde Cierto Punto</h2>
+        <p>
+            Si necesitas eliminar commits desde un punto específico en la historia de tu repositorio, puedes seguir estos pasos en la línea de comandos. Asegúrate de tener acceso a Git y que estás en una ventana de línea de comandos con permisos de administrador (cmd admin):
+        </p>
+        <div class="code-box">
+            <pre>
+                <code>
+                    # Acceder a la carpeta del repositorio local
+                    cd ruta/a/la/carpeta/de/tu/repositorio
+    
+                    # Clonar el último estado del repositorio desde GitHub
+                    git clone UrlDeGitHub
+    
+                    # Entrar en la carpeta clonada
+                    cd nombre-de-la-carpeta-clonada
+    
+                    # Ver el registro de commits y copiar el código del commit desde el que deseas resetear
+                    git log
+    
+                    # Una vez seleccionado el código del commit, todos los commits encima de él se eliminarán
+                    # Salir de la vista del registro de commits (presiona "Q" y luego Enter)
+    
+                    # Regresar a la ruta de la clonación
+                    cd ruta/a/la/carpeta/de/tu/repositorio
+    
+                    # Realizar un reset duro (hard reset) al commit seleccionado
+                    git reset --hard codigo_del_commit_seleccionado
+    
+                    # Confirmar el reset
+                    git push -f origin main
+                </code>
+            </pre>
+        </div>
+    </section>
+    
 </body>
 </html>
