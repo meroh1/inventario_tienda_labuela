@@ -1,16 +1,29 @@
-### Hi there 👋
+# Software MiniTienda MJ
 
-<!--
-**meroh1/meroh1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Bienvenido a MiniTienda MJ, una aplicación de software diseñada para ayudarte a gestionar tu minitienda de manera eficiente, controlar el inventario de productos y realizar un seguimiento de tus ganancias. Esta guía te proporcionará información esencial sobre cómo instalar, configurar y utilizar MiniTienda.
 
-Here are some ideas to get you started:
+## Características principales
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Registro de productos: Agrega y gestiona productos en tu inventario.
+- Reportes y estadísticas: Visualiza informes de ventas y análisis de las ganancias de inventario.
+- Interfaz intuitiva: Fácil de usar, con una interfaz amigable.
+
+## Requisitos previos
+
+Asegúrate de tener instalados los siguientes componentes antes de usar MiniTienda:
+
+- Sistema operativo compatible (Windows, macOS, Linux).
+- [Python](https://www.python.org/downloads/) (versión X.X o superior).
+- [Base de datos SQLite](https://www.sqlite.org/) (ya integrada en Python).
+
+## Instalación
+
+1. Clona este repositorio o descarga el archivo ZIP.
+
+2. Abre una terminal o símbolo del sistema.
+
+3. Navega hasta la carpeta del proyecto MiniTienda.
+
+4. Ejecuta el siguiente comando para instalar las dependencias:
+     -python manage.py runserve
+
