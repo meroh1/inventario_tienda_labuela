@@ -27,5 +27,6 @@ Asegúrate de tener instalados los siguientes componentes antes de usar MiniTien
 4. Ejecuta el siguiente comando para instalar las dependencias:
      -python manage.py runserve
    
-![MiniTienda Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fes%2Fwallpapers%2Fanimals%2Flion&psig=AOvVaw0hW7KsMJNCh7N2PxJH1fhV&ust=1696738342903000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDTk4OJ44EDFQAAAAAdAAAAABAS)
+![MiniTienda Logo](html/WhatsApp%20Image%202023-10-06%20at%2011.03.24%20PM.jpeg)
+
 
